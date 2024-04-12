@@ -11,7 +11,7 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center pb-20">
-      <div className="grid md:grid-cols-2 gap-12 bg-white dark:bg-transparent px-12 py-16 rounded-lg">
+      <div className="grid md:grid-cols-2 gap-12 md:bg-white dark:bg-transparent md:px-12 md:py-16 rounded-lg">
         <div className="flex justify-center items-center  flex-col">
           <h1 className="text-6xl md:text-6xl text-black font-black dark:text-white">
             Hello!
