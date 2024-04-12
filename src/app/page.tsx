@@ -2,8 +2,6 @@ import { ModeToggle } from "@/components/dark-mode-button";
 import { Button } from "@/components/ui/button";
 import { clientFetch } from "@/lib/sanity";
 import { Website } from "@/lib/type";
-import Image from "next/image";
-import JapanImage from "@/../public/japan.jpg";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default async function Home() {
@@ -15,17 +13,17 @@ export default async function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center pb-20">
       <div className="grid md:grid-cols-2 gap-12 bg-white dark:bg-transparent px-12 py-16 rounded-lg">
         <div className="flex justify-center items-center  flex-col">
-          <h1 className="text-3xl md:text-6xl text-black font-black dark:text-white">
+          <h1 className="text-6xl md:text-6xl text-black font-black dark:text-white">
             Hello!
           </h1>
-          <h6 className="text-md md:text-2xl text-neutral-600 dark:text-neutral-300">
+          <h6 className="text-xl md:text-2xl text-neutral-600 dark:text-neutral-300">
             I&apos;m
-            <span className="text-md md:text-2xl text-black dark:text-white font-extrabold">
+            <span className="text-xl md:text-2xl text-black dark:text-white font-extrabold">
               {" "}
               ezrachai.
             </span>
           </h6>
-          <div className="mt-2 gap-1 flex justify-around items-center pr-2">
+          <div className="mt-2 gap-1 flex justify-around items-center md:pr-2">
             <a
               href="https://github.com/EzraChai"
               target="_blank"
@@ -56,11 +54,11 @@ export default async function Home() {
             <ModeToggle />
           </div>
         </div>
-        <div>
+        <div className="flex justify-center items-center flex-col">
           <h6 className="ml-4 uppercase text-sm font-extrabold dark:text-neutral-300 text-neutral-600">
             Projects
           </h6>
-          <div className="flex justify-start mt-4 gap-1 flex-col">
+          <div className="flex justify-center items-center md:justify-start mt-4 gap-0 md:gap-1 flex-col">
             {websiteLinks.map((website) => (
               <a
                 className="w-max"
