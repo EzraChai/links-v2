@@ -72,7 +72,6 @@
   }
   body {
     background-image: url("/bg.png");
-    /* backdrop-filter:  */
     @apply bg-background text-foreground dark:backdrop-invert;
   }
 }
