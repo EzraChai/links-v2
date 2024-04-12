@@ -55,7 +55,7 @@ export default async function Home() {
           </div>
         </div>
         <div className="flex md:block justify-center items-center flex-col">
-          <h6 className="ml-4 uppercase text-sm font-extrabold dark:text-neutral-300 text-neutral-600">
+          <h6 className="md:ml-4 uppercase text-sm font-extrabold dark:text-neutral-300 text-neutral-600">
             Projects
           </h6>
           <div className="flex justify-center items-center md:items-start mt-4 gap-0 md:gap-1 flex-col">
