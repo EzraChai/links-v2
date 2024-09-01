@@ -41,14 +41,14 @@ export default async function Home() {
                 <FaInstagram className="w-[16px] h-[16px] md:w-[22px] md:h-[22px]" />
               </Button>
             </a>
-            <a
+{/*             <a
               href="https://www.linkedin.com/in/ezra-chai-juan-zhe-9b8b3a209/"
               rel="noopener noreferrer"
             >
               <Button className="px-3" variant={"ghost"}>
                 <FaLinkedin className="w-[16px] h-[16px] md:w-[22px] md:h-[22px]" />
               </Button>
-            </a>
+            </a> */}
           </div>
           <div className="hidden md:block md:mt-8">
             <ModeToggle />
