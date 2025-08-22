@@ -59,7 +59,7 @@ export default async function Home() {
             Projects
           </h6>
           <div className="flex justify-center items-center md:items-start mt-4 gap-0 md:gap-1 flex-col">
-            {websiteLinks.map((website) => (
+            {websiteLinks.reverse().map((website) => (
               <a
                 className="w-max"
                 key={website._id}
