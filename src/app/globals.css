@@ -73,5 +73,6 @@
   body {
     background-image: url("/bg.png");
     @apply bg-background text-foreground dark:backdrop-invert;
+    @apply dark:bg-black;
   }
 }
