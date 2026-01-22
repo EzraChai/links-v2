@@ -6,7 +6,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default async function Home() {
   const websiteLinks = await clientFetch<Website[]>(
-    `*[_type == "page"] | order(_createdAt asc)`
+    `*[_type == "page"] | order(_createdAt asc)`,
   );
 
   const pinnedLinks = websiteLinks.filter((link) => link.isPinned);
@@ -32,24 +32,24 @@ export default async function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button className="px-3 " variant={"ghost"}>
-                <FaGithub className="w-[16px] h-[16px] md:w-[22px] md:h-[22px]" />
+              <Button className="px-3 cursor-pointer" variant={"ghost"}>
+                <FaGithub className="w-4 h-4 md:w-5.5 md:h-5.5" />
               </Button>
             </a>
             <a
               href="https://www.instagram.com/juanzhx_/"
               rel="noopener noreferrer"
             >
-              <Button className="px-3" variant={"ghost"}>
-                <FaInstagram className="w-[16px] h-[16px] md:w-[22px] md:h-[22px]" />
+              <Button className="px-3 cursor-pointer" variant={"ghost"}>
+                <FaInstagram className="w-4 h-4 md:w-5.5 md:h-5.5" />
               </Button>
             </a>
             <a
               href="https://www.linkedin.com/in/ezrachai"
               rel="noopener noreferrer"
             >
-              <Button className="px-3" variant={"ghost"}>
-                <FaLinkedin className="w-[16px] h-[16px] md:w-[22px] md:h-[22px]" />
+              <Button className="px-3 cursor-pointer" variant={"ghost"}>
+                <FaLinkedin className="w-4 h-4 md:w-5.5 md:h-5.5" />
               </Button>
             </a>
           </div>
@@ -69,9 +69,8 @@ export default async function Home() {
                   key={website._id}
                   href={website.url}
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
-                  <Button variant={"ghost"} className="py-1">
+                  <Button variant={"ghost"} className="py-1 cursor-pointer">
                     <h4 className="text-md font-bold">{website.title}</h4>
                   </Button>
                 </a>
@@ -89,9 +88,8 @@ export default async function Home() {
                   key={website._id}
                   href={website.url}
                   target="_blank"
-                  rel="noopener noreferrer"
                 >
-                  <Button variant={"ghost"} className="py-1">
+                  <Button variant={"ghost"} className="py-1 cursor-pointer">
                     <h4 className="text-md font-bold">{website.title}</h4>
                   </Button>
                 </a>
