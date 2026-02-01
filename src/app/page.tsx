@@ -2,6 +2,7 @@ import { ModeToggle } from "@/components/dark-mode-button";
 import { Button } from "@/components/ui/button";
 import { clientFetch } from "@/lib/sanity";
 import { Website } from "@/lib/type";
+import { track } from "@vercel/analytics";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default async function Home() {

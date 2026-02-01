@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
+// import { Analytics } from "@vercel/analytics/react";
 import ThemeProvider from "@/components/theme-provider";
 
 export const metadata: Metadata = {
@@ -18,6 +18,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-2XMWXFJMQ1"
+      ></script>
+      <script>
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){window.dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-2XMWXFJMQ1');
+          `}
+      </script>
       <body className={GeistSans.className}>
         <ThemeProvider
           attribute="class"
@@ -25,7 +37,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Analytics />
           {children}
         </ThemeProvider>
       </body>
