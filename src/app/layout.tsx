@@ -18,18 +18,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-2XMWXFJMQ1"
-      ></script>
-      <script>
-        {`
+      <head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-2XMWXFJMQ1"
+        />
+
+        <script>
+          {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){window.dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-2XMWXFJMQ1');
           `}
-      </script>
+        </script>
+      </head>
+
       <body className={GeistSans.className}>
         <ThemeProvider
           attribute="class"
